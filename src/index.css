@@ -1,0 +1,68 @@
+:root {
+  --color-bg: #fdf6f0;
+  --color-bg-alt: #f6e8e2;
+  --color-primary: #8c2f39;
+  --color-primary-light: #b5495a;
+  --color-primary-dark: #611f27;
+  --color-accent: #c99a3f;
+  --color-text: #3a2c2c;
+  --color-text-soft: #6b5656;
+  --color-white: #fffaf5;
+
+  --font-heading: 'Playfair Display', 'Georgia', serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-body: 'Cormorant Garamond', 'Georgia', serif;
+
+  --section-padding: clamp(3.5rem, 8vw, 7rem) clamp(1.25rem, 6vw, 4rem);
+  --max-content-width: 1080px;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-primary-dark);
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--color-primary-light);
+  color: var(--color-white);
+}

@@ -1,0 +1,35 @@
+.how-we-met__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.polaroid {
+  background: var(--color-white);
+  padding: 14px 14px 34px;
+  border-radius: 4px;
+  box-shadow: 0 20px 35px -15px rgba(58, 44, 44, 0.35);
+  transform: rotate(-3deg);
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.polaroid img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.story-text {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  white-space: pre-line;
+}
+
+@media (max-width: 760px) {
+  .how-we-met__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
